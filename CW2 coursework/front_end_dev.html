@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+    <link rel="stylesheet" href="frontend.css">
+    <script src="script.js" defer></script>
+    <script>
+        // JavaScript to prompt for name and age and update the heading
+        document.addEventListener('DOMContentLoaded', () => {
+            var userName = prompt("Welcome! What is your name?");
+            var userAge = prompt("How old are you?");
+            
+            // Validate age input
+            if (isNaN(userAge) || Number(userAge) <= 0) {
+                userAge = prompt("Please enter an appropriate age (a positive number):");
+            }
+
+            // Check if age is less than 12
+            if (Number(userAge) < 12) {
+                alert("You must be at least 12 years old to use this website.");
+                document.body.innerHTML = "<h1>Access Denied</h1><p>Sorry, you must be at least 12 years old to use this website.</p>";
+                return; // Stop further execution
+            }
+
+            // Find the .hero h1 element
+            var heroHeading = document.querySelector('.hero h1');
+
+            // Update the heading with the user's name and age
+            if (userName) {
+                heroHeading.textContent = `Welcome, ${userName}!`;
+            } else {
+                heroHeading.textContent = "Welcome to Ulster Web Learning!";
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="logo.png" width = "200" height = "100"></div>
+            <ul>
+                <li><a href="front_end_dev.html">Home</a></li>
+                <li><a href="overview.html">Learn</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="diary.html">Diary</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="hero">
+        <h1>Welcome to Ulster Web Development Learning Hub</h1>
+        <p><em><bold>Start your journey into front-end web development.</bold></em></p>
+        <a href="overview.html" class="btn">Start Learning</a>
+    </section>
+    <section class="benefits">
+        <h2>The Benefits of Learning Web Development</h2>
+        <p>Web development is an exciting and rewarding field that offers numerous benefits. Here’s why you should consider mastering front-end web development:</p>
+        <ul>
+            <li><strong>Creativity:</strong> Build visually stunning and interactive websites.</li>
+            <li><strong>High Demand:</strong> Front-end developers are in high demand globally.</li>
+            <li><strong>Versatility:</strong> Skills in HTML, CSS, and JavaScript are applicable across industries.</li>
+            <li><strong>Problem-Solving:</strong> Learn to turn ideas into functional and accessible websites.</li>
+            <li><strong>Remote Work Opportunities:</strong> Work for companies worldwide from the comfort of your home.</li>
+        </ul>
+    </section>
+
+    <section class="careers">
+        <h2>Career Opportunities in Front-End Web Development</h2>
+        <p>By mastering front-end development, you can pursue careers in areas such as:</p>
+        <ul>
+            <li><strong>Web Developer:</strong> Build and maintain websites for companies, organizations, or individuals.</li>
+            <li><strong>UI/UX Designer:</strong> Design intuitive and user-friendly interfaces for applications.</li>
+            <li><strong>Mobile App Developer:</strong> Create responsive mobile applications using web technologies.</li>
+            <li><strong>E-commerce Specialist:</strong> Develop online stores and optimize user experiences for businesses.</li>
+            <li><strong>Digital Marketing Expert:</strong> Integrate front-end skills with marketing campaigns to create engaging landing pages.</li>
+            <li><strong>Freelancer:</strong> Offer your development skills to clients on a project basis, giving you flexibility and independence.</li>
+        </ul>
+        <p>With dedication and practice, front-end development can lead to exciting roles in tech startups, creative agencies, or large enterprises.</p>
+    </section>
+
+    </main>
+    <p><a href="#top">Back to top</a></p>
+    <footer class="footer">
+        <p>&copy; 2024 Ulster University. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/UlsterUniversity" target="_blank" aria-label="Facebook">
+                <img src="facebook.png" alt="Facebook Icon" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/UlsterUniversity" target="_blank" aria-label="Instagram">
+                <img src="instagram.png" alt="Instagram Icon" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com/UlsterUni" target="_blank" aria-label="Twitter">
+                <img src="twitter.png" alt="Twitter Icon" class="social-icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

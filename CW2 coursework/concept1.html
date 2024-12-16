@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics for Beginners</title>
+    <link rel="stylesheet" href="frontend.css">
+    <script>
+        // JavaScript to handle the button click event
+        function showAlert() {
+            alert("Hello! You clicked the button. Great job! This is a good example of an interactive element. There are others interactive elements you could incoporate into your website. e.g quizes");
+        }
+    </script>
+</head>
+<body>
+    <header>
+            <nav>
+                <div class="logo"><img src="logo.png" width = "200" height = "100"></div>
+                <ul>
+                    <li><a href="front_end_dev.html">Home</a></li>
+                    <li><a href="overview.html">Learn</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="diary.html">Diary</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Learn HTML Basics</h1>
+    <main>
+        <section>
+            <p>HTML stands for <strong>HyperText Markup Language</strong>. It's the standard language used to create web pages.</p>
+        </section>
+
+        <section>
+            <h2>1. HTML Document Structure</h2>
+            <p>An HTML document has a basic structure:</p>
+            <pre class="code">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;...&lt;/head&gt;
+    &lt;body&gt;...&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>2. Common Tags</h2>
+            <ul>
+                <li>&lt;h1&gt; to &lt;h6&gt;: Headings</li>
+                <li>&lt;p&gt;: Paragraph</li>
+                <li>&lt;a&gt;: Hyperlink</li>
+                <li>&lt;img&gt;: Image</li>
+                <li>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;: Lists</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Interactive Element</h2>
+            <p>Click the button below to see an example of interactivity:</p>
+            <button onclick="showAlert()">Click Me!</button>
+        </section>
+
+        <section>
+            <h2>4. Create Your Own HTML File</h2>
+            <p>Steps:</p>
+            <ol>
+                <li>Open a text editor (e.g., Notepad).</li>
+                <li>Copy the code provided above.</li>
+                <li>Save it as <code>index.html</code>.</li>
+                <li>Open it in a browser to view your webpage!</li>
+            </ol>
+        </section>
+    </main>
+    <p><a href="#top">Back to top</a></p>
+    <footer class="footer">
+        <p>&copy; 2024 Ulster University. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/UlsterUniversity" target="_blank" aria-label="Facebook">
+                <img src="facebook.png" alt="Facebook Icon" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/UlsterUniversity" target="_blank" aria-label="Instagram">
+                <img src="instagram.png" alt="Instagram Icon" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com/UlsterUni" target="_blank" aria-label="Twitter">
+                <img src="twitter.png" alt="Twitter Icon" class="social-icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
+

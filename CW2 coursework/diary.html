@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Diary</title>
+    <link rel="stylesheet" href="frontend.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="logo.png" width="200" height="100" alt="Logo"></div>
+            <ul>
+                <li><a href="front_end_dev.html">Home</a></li>
+                <li><a href="overview.html">Learn</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="diary.html" class="active">Diary</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <img src="mydiary.png" alt="Development Overview" class="banner-img">
+    </div>
+
+    <!-- Main Content Section -->
+    <main>
+        <section>
+            <h1>Overview of the Website</h1>
+            <p>This website is a beginner-friendly learning platform for front-end web development. It consists of multiple interconnected pages designed to teach <em>HTML, CSS, and JavaScript</em> through structured content, interactive quizzes, and real-time coding tools. 
+                Each section is tailored to enhance user engagement and learning outcomes, with a focus on <em>accessibility, responsiveness, and interactivity</em>.</p>
+        </section>
+
+        <section>
+            <h2>Primary Parts of the Website</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>HTML</h3>
+                            <p>Structure of the Website</p>
+                        </div>
+                        <div class="card-back">
+                            <h4>HTML Techniques</h4>
+                            <ul>
+                                <li>Used semantic tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> for better structure and accessibility.</li>
+                                <li>Created forms, navigation menus, and links to different sections.</li>
+                                <li>Ensured proper use of attributes such as <code>alt</code> for images and <code>title</code> for links.</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>CSS</h3>
+                            <p>Styling the Website</p>
+                        </div>
+                        <div class="card-back">
+                            <h4>CSS Techniques</h4>
+                            <ul>
+                                <li>Implemented a responsive design using media queries for mobile and desktop compatibility.</li>
+                                <li>Used flexbox for layout alignment and spacing.</li>
+                                <li>Added hover effects and animations for buttons and interactive elements.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>JavaScript</h3>
+                            <p>Interactivity</p>
+                        </div>
+                        <div class="card-back">
+                            <h4>JavaScript Techniques</h4>
+                            <ul>
+                                <li>Developed interactive quizzes that provide instant feedback and track scores.</li>
+                                <li>Implemented real-time CSS styling tools using <code>input</code> events.</li>
+                                <li>Added functionality for flipping cards to make the content engaging and intuitive.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Key Features</h2>
+            <p>The website includes the following key features:</p>
+            <ul>
+                <li><strong>Interactive Quizzes:</strong> Tests for knowledge retention, with instant feedback and a scoring system.</li>
+                <li><strong>Real-Time CSS Editor:</strong> Allows users to experiment with styles and see changes live.</li>
+                <li><strong>Dynamic User Greeting:</strong> Prompts for user details, validating input, and personalizing the experience.</li>
+                <li><strong>Comprehensive Tools Page:</strong> Highlights essential web development tools with embedded tutorials and detailed explanations.</li>
+                <li><strong>Responsive Design:</strong> Optimized for mobile, tablet, and desktop devices.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Unique and Innovative Code</h2>
+            <div class="cards-container">
+                <!-- Dynamic Greeting Feature -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Dynamic User Greeting</h3>
+                            <p>Interactive and personalized experience.</p>
+                        </div>
+                        <div class="card-back">
+                            <h4>JavaScript Implementation</h4>
+                            <ul>
+                                <li>Prompts for the user's name and age at page load.</li>
+                                <li>Validates age to restrict access for users under 12.</li>
+                                <li>Updates the homepage heading dynamically with the user's name.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real-Time CSS Editor -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Real-Time CSS Editor</h3>
+                            <p>Interactive styling tool for practice.</p>
+                        </div>
+                        <div class="card-back">
+                            <h4>JavaScript Implementation</h4>
+                            <ul>
+                                <li>Uses the <code>input</code> event listener to capture user input.</li>
+                                <li>Dynamically applies CSS styles to a target box.</li>
+                                <li>Enhances learning by providing real-time feedback.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quiz System -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Interactive Quiz</h3>
+                            <p>Knowledge testing with detailed feedback.</p>
+                        </div>
+                        <div class="card-back">
+                            <h4>JavaScript Implementation</h4>
+                            <ul>
+                                <li>Tracks correct and incorrect answers.</li>
+                                <li>Provides instant feedback with visual cues.</li>
+                                <li>Displays a detailed results summary at the end.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Detailed Evaluation</h2>
+            <p>
+                <strong>1. Dynamic Greeting:</strong> This feature leverages JavaScript to create a personalized user experience. By validating the user's age and dynamically updating the DOM, it ensures both engagement and proper data handling. It demonstrates advanced use of JavaScript's DOM manipulation and input validation.
+            </p>
+            <p>
+                <strong>2. Real-Time CSS Editor:</strong> This tool helps users practice CSS in a controlled environment. The use of <code>style.cssText</code> ensures all styles are applied instantly. This implementation is innovative because it combines educational content with practical interactivity.
+            </p>
+            <p>
+                <strong>3. Interactive Quiz:</strong> The quiz system uses event listeners to handle user selections and dynamically calculates scores. The results page provides a detailed breakdown, helping users understand their mistakes. This demonstrates effective use of conditional logic and DOM updates.
+            </p>
+        </section>
+
+        <section>
+            <h2>Responsive Design</h2>
+            <p>
+                Responsive design principles were applied throughout the website to ensure usability on all devices. Key techniques include:
+            </p>
+            <ul>
+                <li>Using flexbox for flexible layouts and alignment.</li>
+                <li>Implementing media queries for adaptive styling based on screen size.</li>
+                <li>Optimizing images and fonts for smaller devices.</li>
+            </ul>
+        </section>
+    </main>
+    <p><a href="#top">Back to top</a></p>
+    <footer class="footer">
+        <p>&copy; 2024 Ulster University. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/UlsterUniversity" target="_blank" aria-label="Facebook">
+                <img src="facebook.png" alt="Facebook Icon" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/UlsterUniversity" target="_blank" aria-label="Instagram">
+                <img src="instagram.png" alt="Instagram Icon" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com/UlsterUni" target="_blank" aria-label="Twitter">
+                <img src="twitter.png" alt="Twitter Icon" class="social-icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
