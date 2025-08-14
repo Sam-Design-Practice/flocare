@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us — FloCare</title>
+  <link rel="stylesheet" href="index.css" />
+  <meta name="description" content="Contact FloCare for cleaning services. Call, email, WhatsApp, or book instantly via Booksy. View our hours and service areas." />
+
+  <!-- Page-specific styles (responsive map) -->
+  <style>
+    /* Responsive map */
+    .map-card{ padding: 0; }
+    .map-wrap{
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;        /* wide on desktops */
+      border-radius: var(--radius, 16px);
+      overflow: hidden;
+      box-shadow: var(--shadow-soft, 0 6px 18px rgba(0,0,0,.25));
+    }
+    .map-wrap iframe{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    @media (max-width: 720px){
+      .map-wrap{ aspect-ratio: 4 / 5; }  /* taller on phones */
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="FloCare Home">
+        <img src="logo.jpg" alt="" class="logo" />
+        <span class="brand-text">FloCare</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+        <ul id="primary-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a class="active" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-label="Contact FloCare">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Contact FloCare</h1>
+          <p class="lead">
+            Prefer a quick chat? Reach us by phone, email, or WhatsApp — or book instantly via Booksy.
+          </p>
+          <p style="margin-top:1rem; display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap;">
+            <a class="btn btn-primary" href="https://booksy.com/en-gb/162958_flocare-cleaning-services_professional-services_25535_united-kingdom?do=invite&_branch_match_id=1484140428641512193&utm_medium=profile_share_from_profile&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVt6wKciqINPZzC0uyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAbyHdazwAAAA%3D" target="_blank" rel="noopener" aria-label="Book FloCare on Booksy">Book on Booksy</a>
+            <a class="btn btn-ghost" href="tel:+447936060206" aria-label="Call FloCare">Call Us</a>
+            <a class="btn btn-ghost" href="mailto:Mirabelize@flocare.org" aria-label="Email FloCare">Email Us</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Cards -->
+    <section class="section" aria-labelledby="contact-details-title">
+      <div class="container">
+        <h2 id="contact-details-title" class="section-title">How to Reach Us</h2>
+        <div class="grid-3">
+          <article class="feature-card" aria-label="Book online">
+            <h3>Book Online (Booksy)</h3>
+            <p class="lead">Live availability & instant confirmation</p>
+            <p><a href="https://booksy.com/en-gb/162958_flocare-cleaning-services_professional-services_25535_united-kingdom?do=invite&_branch_match_id=1484140428641512193&utm_medium=profile_share_from_profile&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVt6wKciqINPZzC0uyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAbyHdazwAAAA%3D" target="_blank" rel="noopener">Open FloCare on Booksy</a></p>
+            <p class="hint">Best for quick bookings and rescheduling.</p>
+          </article>
+
+          <article class="feature-card" aria-label="Phone">
+            <h3>Phone</h3>
+            <p class="lead">Mon–Fri, 9:00–17:00</p>
+            <p><a href="tel:+447936060206">+44 7936 060206</a></p>
+            <p class="hint">Out of hours? Leave a message and we’ll return your call.</p>
+          </article>
+
+          <article class="feature-card" aria-label="Email">
+            <h3>Email</h3>
+            <p class="lead">General enquiries & quotes</p>
+            <p><a href="mailto:Mirabelize@flocare.org">Mirabelize@flocare.org</a></p>
+            <p class="hint">Attach any photos for quicker quotes.</p>
+          </article>
+
+          <article class="feature-card" aria-label="WhatsApp">
+            <h3>WhatsApp</h3>
+            <p class="lead">Messages & photos welcome</p>
+            <p><a href="https://wa.me/447856947784" target="_blank" rel="noopener">Message on WhatsApp</a></p>
+            <p class="hint">We’ll reply as soon as we can.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hours & Service Area -->
+    <section class="section section-bg" aria-labelledby="hours-area-title">
+      <div class="container">
+        <h2 id="hours-area-title" class="section-title">Hours & Service Area</h2>
+        <div class="grid-3">
+          <article class="feature-card" aria-label="Opening hours">
+            <h3>Opening Hours</h3>
+            <ul style="margin:0; padding-left:1.2rem;">
+              <li>Mon–Fri: 09:00–17:00</li>
+              <li>Sat: 10:00–14:00</li>
+              <li>Sun: Closed</li>
+            </ul>
+            <p style="margin-top:.6rem;">Recurring clients may request early/late slots.</p>
+          </article>
+
+          <article class="feature-card" aria-label="Service coverage">
+            <h3>Service Areas</h3>
+            <p>We cover all areas in Northern Ireland. Share your postcode and we’ll confirm availability.</p>
+            <ul style="margin:0; padding-left:1.2rem;">
+              <li>Belfast & Greater Belfast</li>
+              <li>Lisburn & Castlereagh</li>
+              <li>Newtownabbey & surrounding</li>
+              <li>Antrim</li>
+              <li>Derry/Londonderry</li>
+              <li>Armagh</li>
+              <li>Down, Tyrone, Fermanagh</li>
+            </ul>
+          </article>
+
+          <article class="feature-card" aria-label="Location">
+            <h3>Location</h3>
+            <address style="font-style:normal;">
+              FloCare<br />
+              96 Malvern St, Belfast BT13 1JB<br />
+              Northern Ireland, United Kingdom
+            </address>
+            <p style="margin-top:.6rem;">
+              <a class="btn btn-ghost" href="https://www.google.com/maps/place/96+Malvern+St,+Belfast+BT13+1JB/@54.6058422,-5.946424,17z" target="_blank" rel="noopener">Open in Maps</a>
+            </p>
+          </article>
+        </div>
+
+        <!-- Embedded Google Map (responsive) -->
+        <div class="feature-card map-card" style="margin-top:1.1rem;">
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2310.8950093661733!2d-5.9464240236698345!3d54.60584217974545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861085ca8ae74c3%3A0xa0503f5fe1c870af!2s96%20Malvern%20St%2C%20Belfast%20BT13%201JB!5e0!3m2!1sen!2suk!4v1755082267361!5m2!1sen!2suk"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+              title="FloCare location on Google Maps"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Book (no form) -->
+    <section class="section" aria-labelledby="book-title">
+      <div class="container">
+        <h2 id="book-title" class="section-title">Booking, Step by Step</h2>
+        <div class="grid-3">
+          <article class="feature-card">
+            <h3>1) Get in Touch</h3>
+            <p>Message us with your postcode, property type, rooms/bathrooms, and preferred days.</p>
+          </article>
+          <article class="feature-card">
+            <h3>2) Clear Quote</h3>
+            <p>We’ll send a tailored quote and suggested schedule. Add-ons available on request.</p>
+          </article>
+          <article class="feature-card">
+            <h3>3) Confirm & Clean</h3>
+            <p>Pick a slot, share any access info, and we’ll get your space sparkling.</p>
+          </article>
+        </div>
+
+        <p style="text-align:center; margin-top:1rem; display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="https://booksy.com/en-gb/162958_flocare-cleaning-services_professional-services_25535_united-kingdom?do=invite&_branch_match_id=1484140428641512193&utm_medium=profile_share_from_profile&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVt6wKciqINPZzC0uyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAbyHdazwAAAA%3D" target="_blank" rel="noopener">Book on Booksy</a>
+          <a class="btn btn-ghost" href="mailto:Mirabelize@flocare.org?subject=Quote%20Request&body=Hi%20FloCare%2C%0A%0AMy%20postcode%3A%20%0AProperty%20type%20(%20house%2Fflat%2Foffice%20)%3A%20%0AApprox.%20rooms%2Fbathrooms%3A%20%0APreferred%20days%3A%20%0AAny%20add-ons%3A%20%0A%0AThanks!">Request a Quote by Email</a>
+          <a class="btn btn-ghost" href="tel:+447936060206">Call to Book</a>
+        </p>
+
+        <p class="back-to-top"><a href="#top" class="btn btn-ghost" aria-label="Back to top">Back to top ↑</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> FloCare. All rights reserved.</p>
+      <div class="social-media">
+        <a href="https://www.instagram.com/flocare_cleaning_services?igsh=YWUzN3RvdW1kdWFv&ut-m_source=gr" target="_blank" rel="noopener" aria-label="FloCare on Instagram">
+          <img src="instagram.png" alt="Instagram" class="social-icon" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('#primary-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('open');
+      });
+    }
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- LocalBusiness structured data (added Booksy profile) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "FloCare",
+    "image": "logo.jpg",
+    "url": "https://www.flocare.co.uk",
+    "telephone": "+447936060206",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "96 Malvern St",
+      "postalCode": "BT13 1JB",
+      "addressLocality": "Belfast",
+      "addressRegion": "Northern Ireland",
+      "addressCountry": "GB"
+    },
+    "sameAs": [
+      "https://www.instagram.com/flocare_cleaning_services",
+      "https://booksy.com/en-gb/162958_flocare-cleaning-services_professional-services_25535_united-kingdom?do=invite&_branch_match_id=1484140428641512193&utm_medium=profile_share_from_profile&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVt6wKciqINPZzC0uyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAbyHdazwAAAA%3D"
+    ],
+    "areaServed": ["Belfast","Lisburn","Newtownabbey","Antrim","Derry/Londonderry","Armagh","Down","Tyrone","Fermanagh"],
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"14:00"}
+    ]
+  }
+  </script>
+</body>
+</html>
